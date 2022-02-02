@@ -17,8 +17,7 @@ const getData = async () => {
   })
     .then((data) => {
       store.dispatch(fetchData(data.data));
-    })
-    .catch((err) => console.log(err));
+    });
 };
 getData();
 export default store;

@@ -30,7 +30,7 @@ The application will allow users to check daily reports about Covid-19 all aroun
 
 ## Live Demo
 
-[Live Demo](https://spacex-travelers-hub.netlify.app/)
+[Live Demo](https://covidwr.netlify.app/)
 
 ## Getting Started
 

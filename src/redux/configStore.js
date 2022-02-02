@@ -1,14 +1,13 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import axios from 'axios';
 import thunk from 'redux-thunk';
-import logger from 'redux-logger';
 import countryReducer, { fetchData } from './countries/countries';
 
 const reducer = combineReducers({
   countryReducer,
 });
 
-const store = createStore(reducer, applyMiddleware(thunk, logger));
+const store = createStore(reducer, applyMiddleware(thunk));
 // Fetch Countries
 
 const getData = async () => {

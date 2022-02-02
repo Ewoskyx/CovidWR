@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the Continent component 1`] = `
+<div
+  className="col-12 col-md-5 continent-main"
+>
+  <a
+    className="link"
+    href="/countries"
+    id=""
+    onClick={[Function]}
+  />
+  <div
+    className="card continent-card text-white"
+  >
+    <img
+      alt=" card"
+      className="card-img"
+      src=""
+    />
+    <div
+      className="card-img-overlay"
+    >
+      <h5
+        className="card-title"
+      >
+        
+      </h5>
+      <p
+        className="card-text"
+      >
+        Available Countries: 0
+      </p>
+      <p
+        className="card-text"
+      >
+        Confirmed Cases: 
+      </p>
+      <p
+        className="card-text"
+      >
+        Total Deaths: 
+      </p>
+      <p
+        className="card-text"
+      >
+        Last Update 
+      </p>
+    </div>
+  </div>
+</div>
+`;

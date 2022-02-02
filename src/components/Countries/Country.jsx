@@ -33,10 +33,10 @@ const Country = ({
 export default Country;
 
 Country.propTypes = {
-  name: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired,
+  name: PropTypes.string,
+  handleClick: PropTypes.func,
   code: PropTypes.string,
-  population: PropTypes.number,
+  population: PropTypes.string,
   id: PropTypes.string,
 };
 
@@ -44,4 +44,6 @@ Country.defaultProps = {
   code: '',
   population: '',
   id: '',
+  name: '',
+  handleClick: () => {},
 };

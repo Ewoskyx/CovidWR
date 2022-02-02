@@ -9,7 +9,7 @@ const reducer = combineReducers({
 });
 
 const store = createStore(reducer, applyMiddleware(thunk, logger));
-// Fetch Leagues
+// Fetch Countries
 
 const getData = async () => {
   await axios('https://covid-api.mmediagroup.fr/v1/cases', {
@@ -21,6 +21,4 @@ const getData = async () => {
     .catch((err) => console.log(err));
 };
 getData();
-// API KEY : 6280240eef3dc8fcde67ebe4386081eb
-// sample query: https://v3.football.api-sports.io/leagues?country=world
 export default store;

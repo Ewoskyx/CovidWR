@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './Continent.css';
 
@@ -8,7 +8,7 @@ const Continent = ({
 }) => (
 
   <div className="col-12 col-md-5 continent-main">
-    <Link to="/countries" onClick={clickHandler} className="link" id={id} />
+    <NavLink to="/countries" onClick={clickHandler} className="link" id={id} />
     <div className="card continent-card text-white">
       <img className="card-img" src={continent} alt={`${title} card`} />
       <div className="card-img-overlay">
@@ -28,9 +28,9 @@ export default Continent;
 Continent.propTypes = {
   continent: PropTypes.string,
   title: PropTypes.string,
-  countryCount: PropTypes.number,
+  countryCount: PropTypes.string,
   totalCountries: PropTypes.number,
-  totalDeaths: PropTypes.number,
+  totalDeaths: PropTypes.string,
   updateDate: PropTypes.string,
   id: PropTypes.string,
   clickHandler: PropTypes.func,
@@ -39,9 +39,9 @@ Continent.propTypes = {
 Continent.defaultProps = {
   continent: '',
   title: '',
-  countryCount: 0,
+  countryCount: '',
   totalCountries: 0,
-  totalDeaths: 0,
+  totalDeaths: '',
   updateDate: '',
   id: '',
   clickHandler: () => {},

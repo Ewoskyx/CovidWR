@@ -38,17 +38,17 @@ export default World;
 World.propTypes = {
   continent: PropTypes.string,
   title: PropTypes.string,
-  countryCount: PropTypes.number,
+  countryCount: PropTypes.string,
   totalCountries: PropTypes.number,
-  totalDeaths: PropTypes.number,
+  totalDeaths: PropTypes.string,
   updateDate: PropTypes.string,
 };
 
 World.defaultProps = {
   continent: '',
   title: '',
-  countryCount: 0,
+  countryCount: '',
   totalCountries: 0,
-  totalDeaths: 0,
+  totalDeaths: '',
   updateDate: '',
 };

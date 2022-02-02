@@ -1,0 +1,22 @@
+.home-main {
+  background-color: #2d4573;
+  color: #dedede;
+}
+
+.home-body {
+  background-color: #2d4573;
+}
+
+.logo {
+  animation: logoLoop 8s infinite linear;
+}
+
+@keyframes logoLoop {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -1,0 +1,35 @@
+.country-card {
+  position: relative;
+  border: none;
+}
+
+.country-body {
+  background-color: #5788e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.country-name {
+  background-color: #2d4573;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.code-title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: normal;
+}
+
+.card-link {
+  color: #dedede;
+  font-family: "Lato", sans-serif;
+}
+
+.country-population {
+  font-family: 'Cabin', sans-serif;
+  font-weight: normal;
+}

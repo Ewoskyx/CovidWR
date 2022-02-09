@@ -10,7 +10,7 @@ const Continent = ({
   <div className="col-12 col-md-5 continent-main">
     <NavLink to="/countries" onClick={clickHandler} className="link" id={id} />
     <div className="card continent-card text-white">
-      <img className="card-img" src={continent} alt={`${title} card`} />
+      <img className="card-img wmap" src={continent} alt={`${title} card`} />
       <div className="card-img-overlay">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{`Available Countries: ${totalCountries}`}</p>

@@ -1,0 +1,29 @@
+.world-wrapper {
+  border: none;
+}
+
+.worldmap {
+  stroke: #999;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: bevel;
+}
+
+.worldmap path {
+  fill: #ccc;
+  transition: fill 3.5s, ease;
+}
+
+.worldmap path:hover {
+  filter: url(#myFilter);
+  cursor: pointer;
+  stroke-dasharray: 100;
+  fill: #ececec;
+  animation: pathAnimation 6s linear infinite;
+}
+
+@keyframes pathAnimation {
+  to {
+    stroke-dashoffset: 300;
+  }
+}

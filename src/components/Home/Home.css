@@ -1,14 +1,11 @@
 .home-main {
-  background-color: #2d4573;
-  color: #dedede;
-}
-
-.home-body {
-  background-color: #2d4573;
+  background: #c21500;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(top, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .logo {
-  animation: logoLoop 8s infinite linear;
+  animation: logoLoop 12s infinite linear;
 }
 
 @keyframes logoLoop {

@@ -5,6 +5,7 @@ import './Home.css';
 import { getCountries } from '../../redux/countries/countries';
 import Continent from './Continent';
 import World from './World';
+import Worldmap from '../World/Worldmap';
 import {
   europe, asia, africa, namerica, samerica, oceania, cov19, world,
 } from '../../images/index';
@@ -15,6 +16,13 @@ const Home = () => {
     dispatch(getCountries(e.target.id));
   };
 
+  const clickForCountries = (e) => {
+    if (e.target.id) {
+      console.log(e.target.id);
+    } else {
+      console.log(e.target.className.baseVal);
+    }
+  };
   const continents = useSelector((state) => state.countryReducer.countries);
   const values = Object.values(continents);
   const stats = (cont, continent, id) => {
@@ -69,7 +77,8 @@ const Home = () => {
           <h1 className="h3">Covid-19 World Report</h1>
           <img className="logo" src={cov19} alt="logo" />
         </div>
-        <div className="d-flex flex-wrap justify-content-center gap-2 home-body">
+        <div className="d-flex flex-wrap justify-content-center gap-2 home-body overflow-hidden">
+          <Worldmap clickaction={clickForCountries} />
           {stats('World', world, 'World')}
           {stats('Europe', europe)}
           {stats('Asia', asia)}
